@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: zhaolong
-    url: jdbc:mysql://localhost:3306/jieruan?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/store117?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
 mybatis-plus:
   mapper-locations: classpath:mapper/*Mapper.xml
   configuration:
@@ -17,3 +17,6 @@ mybatis-plus:
       logic-delete-value: 1
       id-type: auto
       logic-delete-field: deleteFlag
+logging:
+  level:
+    com.zhao.mapper: debug
