@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.zhao.entity.ProductCategory;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @Author zhaoL
  * @Time 2022/10/26 21:08

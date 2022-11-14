@@ -10,5 +10,5 @@
         <result property="updateTime" column="update_time"></result>
         <result property="deleteFlag" column="delete_flag"></result>
     </resultMap>
-    
+
 </mapper>
