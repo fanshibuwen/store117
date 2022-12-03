@@ -1,15 +1,10 @@
 package com.zhao.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.test.context.DynamicPropertySource;
-
-import java.util.Date;
 
 /**
  * @Author zhaoL
@@ -19,7 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName("product_category")
-public class ProductCategory {
+public class ProductCategory extends BaseEntity{
 
     /**
      * 类目id
@@ -34,19 +29,6 @@ public class ProductCategory {
      * 类目编号
      */
     private Integer categoryType;
-    /**
-     * 创建时间
-     */
-    @TableField(fill = FieldFill.INSERT)
-    private Date createTime;
-    /**
-     * 更新时间
-     */
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Date updateTime;
-    /**
-     * 逻辑删除
-     */
-    private Integer deleteFlag;
+
 
 }

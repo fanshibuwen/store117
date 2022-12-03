@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhao.mapper.ProductInfoMapper">
+
+    <resultMap id="ProductInfoMp" type="com.zhao.entity.ProductInfo">
+        <id property="productId" column="product_id"></id>
+        <result property="productName" column="product_name"></result>
+        <result property="productPrice" column="product_price"></result>
+        <result property="productStack" column="product_stack"></result>
+        <result property="productDescription" column="product_description"></result>
+        <result property="productIcon" column="product_icon"></result>
+        <result property="categoryType" column="category_type"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="deleteFlag" column="delete_flag"></result>
+    </resultMap>
+
+</mapper>
